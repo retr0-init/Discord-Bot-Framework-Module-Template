@@ -34,7 +34,7 @@ class ModuleName(interactions.Extension):
         description="Replace here for the group command descriptions"
     )
 
-    @self.module_group.subcommand("ping", sub_cmd_description="Replace the description of this command")
+    @module_group.subcommand("ping", sub_cmd_description="Replace the description of this command")
     @interactions.slash_option(
         name = "option_name",
         description = "Option description",
@@ -45,7 +45,7 @@ class ModuleName(interactions.Extension):
         await ctx.send(f"Pong {option_name}!")
         internal_t.internal_t_testfunc()
 
-    @self.module_base.subcommand("pong", sub_cmd_description="Replace the description of this command")
+    @module_base.subcommand("pong", sub_cmd_description="Replace the description of this command")
     @interactions.slash_option(
         name = "option_name",
         description = "Option description",
