@@ -29,7 +29,7 @@ class ModuleName(interactions.Extension):
         name="replace_your_command_base_here",
         description="Replace here for the base command descriptions"
     )
-    module_group: interactions.SlashCommand = self.module_base.group(
+    module_group: interactions.SlashCommand = module_base.group(
         name="replace_your_command_group_here",
         description="Replace here for the group command descriptions"
     )
